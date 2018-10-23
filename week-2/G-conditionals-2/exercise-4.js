@@ -9,7 +9,12 @@
 */
 
 function containsCode(sentence) {
-
+  var sent = "" + sentence;
+  if(sent.indexOf("code")!==-1){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /* 
