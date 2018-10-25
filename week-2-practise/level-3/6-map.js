@@ -9,13 +9,20 @@ function tidyUpString(str) {
     .toLowerCase()
     .replace("/", "");
 }
-
 function captialise(str) {
-  // complete this function
+  var arrayedStr = str.split("");
+  arrayedStr[0] = arrayedStr[0].toUpperCase();
+  return arrayedStr.join("");
+ // var firstChar = str.charAt(0);
+ // var cap = firstChar.toUpperCase()
+  //var splStr = str.split(firstChar);
+  //splStr[0] = cap;
+  //return splStr[0] + splStr[1];
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
-var mentorsTidyAndCapitalised;
+var mentorsTidy = mentors.map(tidyUpString);
+var mentorsTidyAndCapitalised = mentorsTidy.map(captialise);
 
 console.log(mentorsTidyAndCapitalised);
 
