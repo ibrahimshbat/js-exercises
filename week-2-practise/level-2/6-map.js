@@ -3,8 +3,14 @@
 // 2. Declare a new array, `percentagesFormatted`, containing
 //    - each item in `percentages` formatted by your function
 
-var percentages = [1, 23, 92, 18];
 
+function addPer(number){
+  //return number + '%';
+  return number + "%";
+
+}
+var percentages = [1, 23, 92, 18];
+var percentagesFormatted = percentages.map(addPer);
 console.log(percentagesFormatted);
 
 /* 
